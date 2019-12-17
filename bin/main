@@ -23,7 +23,7 @@ class Game
   attr_reader :player1
   attr_reader :player2
   attr_reader :count
-  attr_accessor :board
+  attr_writer :board
   @@players = Array.new(2)
   def initialize
     @board = Board.new
@@ -144,3 +144,5 @@ class Player
     @@remaining_symbol = Array.new
   end
 end
+
+start_game
